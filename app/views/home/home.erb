@@ -1,0 +1,70 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<div class="container">
+  <form id="requestForm" accept-charset=utf-8 action="/" method="post">
+    <div class="form-group">
+      <label for="email">Request For</label>
+      <input type="text" class="form-control" id="requestFor" placeholder="Nwie ID" name="requestFor">
+    </div>
+    <!--<table class="table">-->
+      <!--<thead>-->
+      <!--<tr>-->
+        <!--<th></th>-->
+        <!--<th>Access Name</th>-->
+        <!--<th>Role</th>-->
+        <!--<th>Manager</th>-->
+      <!--</tr>-->
+      <!--</thead>-->
+      <!--<tbody>-->
+      <!--<tr>-->
+        <!--<th scope="row">-->
+          <!--<input type="checkbox">-->
+        <!--</th>-->
+        <!--<td>A</td>-->
+        <!--<td>Tester</td>-->
+        <!--<td>Bob Bobson</td>-->
+      <!--</tr>-->
+      <!--<tr>-->
+        <!--<th scope="row">-->
+          <!--<input type="checkbox" name="role">-->
+        <!--</th>-->
+        <!--<td>B</td>-->
+        <!--<td>Developer</td>-->
+        <!--<td>Bat Batman</td>-->
+      <!--</tr>-->
+      <!--<tr>-->
+        <!--<th scope="row">-->
+          <!--<input type="checkbox">-->
+        <!--</th>-->
+        <!--<td>C</td>-->
+        <!--<td>RA</td>-->
+        <!--<td>Spider Spiderman</td>-->
+      <!--</tr>-->
+      <!--</tbody>-->
+    <!--</table>-->
+    <div class="form-check">
+      <div class="form-group">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="">
+          Clarity ID Setup | Developer | Bob Bobson
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="">
+          Siebel Group Access | Tester | Bat Batman
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="">
+          Toad Access | Developer | Spider Spiderman
+        </label>
+      </div>
+    </div>
+    <a href="/clone_login" class="help-block">Clone Existing Access</a>
+    <input type="submit" class="btn btn-primary" id="submit" value="Submit">
+  </form>
+</div>
