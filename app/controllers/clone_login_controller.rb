@@ -14,6 +14,6 @@ class CloneLoginController < ApplicationController
 
     response = http.request(request)
 
-    render :json => response
+    render :json => response.body
   end
 end

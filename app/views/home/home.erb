@@ -3,10 +3,13 @@
 </head>
 
 <div class="container">
+  <h1>Access Request Form</h1>
+  <hr />
+  <hr />
   <form id="requestForm" accept-charset=utf-8 action="/" method="post">
     <div class="form-group">
       <label for="email">Request For</label>
-      <input type="text" class="form-control" id="requestFor" placeholder="Nwie ID" name="requestFor">
+      <input required type="text" class="form-control" id="requestFor" placeholder="Nwie ID" name="requestFor">
     </div>
     <!--<table class="table">-->
       <!--<thead>-->
@@ -47,24 +50,29 @@
     <div class="form-check">
       <div class="form-group">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" value="">
+          <input class="form-check-input" type="checkbox" name="clarity">
           Clarity ID Setup | Developer | Bob Bobson
         </label>
       </div>
       <div class="form-group">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" value="">
+          <input class="form-check-input" type="checkbox" name="siebel">
           Siebel Group Access | Tester | Bat Batman
         </label>
       </div>
       <div class="form-group">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" value="">
+          <input class="form-check-input" type="checkbox" name="toad">
           Toad Access | Developer | Spider Spiderman
         </label>
       </div>
     </div>
-    <a href="/clone_login" class="help-block">Clone Existing Access</a>
-    <input type="submit" class="btn btn-primary" id="submit" value="Submit">
+    <div class="form-group">
+      <label for="email">Clone From</label>
+      <input type="text" class="form-control" id="cloneFrom" placeholder="Nwie ID" name="cloneFrom">
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-primary" id="submit" value="Continue >">
+    </div>
   </form>
 </div>

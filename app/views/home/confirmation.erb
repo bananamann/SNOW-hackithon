@@ -1,0 +1,33 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<div class="container">
+  <h1>Confirm Access Request</h1>
+  <hr />
+  <hr />
+  <form id="confirmationForm" accept-charset=utf-8 action="/home/submit_access_request" method="post">
+    <div class="form-group">
+      <label for="email">Requested For</label>
+      <input type="text" class="form-control" name="requestFor" value="<%= params[:requestFor] %>" disabled>
+    </div>
+
+    <% if params[:clarity] %>
+        <h3> - Clarity ID Setup</h3>
+    <% end %>
+    <% if params[:siebel] %>
+        <h3> - Siebel Group Access</h3>
+    <% end %>
+    <% if params[:toad] %>
+        <h3> - Toad Access</h3>
+    <% end %>
+
+    <div class="form-group">
+      <label for="email">Retrieved From</label>
+      <input type="text" class="form-control" id="retrievedFrom" name="retrievedFrom" value="<%= params[:cloneFrom] %>" disabled>
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-primary" id="submit" value="Confirm">
+    </div>
+  </form>
+</div>

@@ -6,10 +6,11 @@ Servicenow::Application.routes.draw do
   root 'home#index'
 
   # Example of regular route:
-  post '/', to: 'home#submit_access_request'
+  post '/home/submit_access_request', to: 'home#submit_access_request'
+  post '/', to: 'home#confirm_access_request'
 
   get '/clone_login', to: 'clone_login#index'
-  get '/clone_login/:name', to: 'clone_login#show'
+  get '/clone_login/show', to: 'clone_login#show'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
